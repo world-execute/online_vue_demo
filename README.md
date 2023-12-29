@@ -1,19 +1,9 @@
-# online_vue_demo
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 线上VUE项目
+___
+## 前言
+> 终于,我有了第一台服务器,成功拿到了ICP备案,我可以将自己网站发布上线了,由于学习微信小程序的必要,网络请求需要一个
+合法的域名,于是这个网站也就被用于提供微信学习的接口了,大家也可以自行调用接口调试,网页会自带接口信息
+## 网站UI设计图
+![主界面](https://picss.sunbangyan.cn/2023/12/29/c96dc75a13fe5e418b407ad152913c59.jpeg)
+## 更新信息
+0.0.1 网页框架的搭建
