@@ -33,7 +33,7 @@
     <el-footer>
       <div v-for="item in info_2" class="footer_box">
         <div>
-          <p>{{item.text}}</p>
+          <p style="white-space: nowrap;">{{item.text}}</p>
         </div>
         <img v-if="item.image" :src="item.image" style="width: 25px;margin-left: 5px">
       </div>
