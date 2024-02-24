@@ -4,6 +4,9 @@
     padding: 0;
     color: #303133;
 }
+body{
+    min-width: 600px;;
+}
 a {
     text-decoration: none;
     color: black;

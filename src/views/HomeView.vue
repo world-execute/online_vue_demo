@@ -3,26 +3,23 @@
     <el-header>
     </el-header>
     <el-main style="overflow: hidden">
-      <el-row style="height: 100%">
-        <el-col :span="6" style="height: 100%">
+      <el-row style="margin-top: 10%">
+        <!--左边栏-->
+        <el-col :span="12" :xs="24" :sm="24" :md="12" style="height: 100%">
           <div class="v-col">
-            <div style="height: 100px;width: 100px;background-color: #ff6944">
-              <P>Node接口服务</P>
-            </div>
+            <img style="width: 70%" src="../../public/image/indexNode.png">
           </div>
-          <!--<el-card>-->
-          <!--  <p>Node接口服务</p>-->
-          <!--</el-card>-->
         </el-col>
-        <el-col :span="18" style="height: 100%">
+        <!--右边栏-->
+        <el-col :span="12" :xs="24" :sm="24" :md="12" style="height: 100%">
           <div class="v-col-2">
             <div v-for="(item,index) in info_1" class="list_1">
               <img :src="item.image" alt="标签图片" style="width: 45px;margin-left: 20px" >
-              <div style="margin-left: 20px;width: 275px">
+              <div style="margin-left: 20px;width: 80%">
                 <p style="font-size: 18px;font-weight: bolder;margin-bottom: 8px">{{item.text}}</p>
                 <p style="font-weight: bold">{{item.info}}</p>
               </div>
-              <el-button type="primary" v-on:click="handleButtonClick(index)" style="margin-left: 170px;padding: 10px">
+              <el-button type="primary" v-on:click="handleButtonClick(index)" style="margin-right:10px;padding: 10px">
                 <img width="30px" :src="item.image2">
               </el-button>
             </div>
@@ -33,7 +30,7 @@
     <el-footer>
       <div v-for="item in info_2" class="footer_box">
         <div>
-          <p style="white-space: nowrap;">{{item.text}}</p>
+          <p style="white-space: nowrap;font-weight: bold;color:#838383">{{item.text}}</p>
         </div>
         <img v-if="item.image" :src="item.image" style="width: 25px;margin-left: 5px">
       </div>
@@ -136,6 +133,7 @@ export default {
   align-content: center;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5%;
 }
 .v-col-2{
   height: 100%;
@@ -148,7 +146,7 @@ export default {
 .list_1{
   display: flex;
   height: 90px;
-  width: 600px;
+  width: 70%;
   flex-direction: row;
   align-items: center;
   background-color: white;
